@@ -1,0 +1,14 @@
+.calculator-container {
+    height: 50rem;
+    width: 35rem;
+    background-color: yellow; 
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.calculator-container > button {
+    height: 5rem;
+    width: 3rem;
+    background-color: blue; 
+    margin: 1px solid black;
+}
