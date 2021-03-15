@@ -13,7 +13,7 @@
 
 .calculator-container > button {
     background-color: white; 
-    border: 1px solid blue;
+    border: 1px solid #bf0a0a;
     border-radius: 1rem;
     font-size: 1.2rem;
     font-family: Monaco;
@@ -21,12 +21,16 @@
 }
 
 .calculator-container > button:hover {
-    box-shadow: 0px 0px 4px 1px blue;
+    box-shadow: 0px 0px 4px 1px #bf0a0a;
+    background-color: #78acc4;
 }
 
 .calculator-screen {
-    display: flex;
-    background-color: #eb3d34;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #78acc4;
+    border: 1px solid #bf0a0a;
     border-radius: 1rem;
     font-family: Monaco;
     font-size: 1.5rem;
@@ -36,6 +40,30 @@
 }
 
 #input-screen {
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    color: white;
+    background-color: transparent;
+    border-radius: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#ans {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    color: white;
+    background-color: transparent;
+    border-radius: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#result-screen {
+    grid-row: 2 / 3;
+    grid-column: 2 / 5;
     color: white;
     background-color: transparent;
     border-radius: 1rem;
